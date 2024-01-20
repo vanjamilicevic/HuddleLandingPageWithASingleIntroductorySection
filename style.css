@@ -145,3 +145,69 @@ body {
     fill: #E880E8;
     cursor: pointer;
 }
+
+/* --------------Media queries-------------- */
+
+@media only screen and (max-width: 1240px) {
+
+    body {
+        height: fit-content;
+        overflow: scroll;
+    }
+
+    .main-container {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        background-image: url('images/bg-mobile.svg'), linear-gradient( #684BB1, #684BB1);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .main-content-section {
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 80px;
+    }
+
+    .illustration-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .illustration {
+        max-width: 95%;
+    }
+
+    .content-container {
+        padding-left: 0;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .description {
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .button {
+        margin: auto;
+        width: 70%;
+        padding: 10px;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 12px;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+}
